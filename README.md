@@ -23,6 +23,7 @@ bench --site your-site.name install-app assignmate
 ```
 
 ## 🛠️ Usage & Examples
+Simply add this code in your Doctype's JS file
 ```bash
 frappe.ui.form.on("Your Doctype", {
     refresh(frm) {
@@ -35,6 +36,7 @@ frappe.ui.form.on("Your Doctype", {
     }
 });
 ```
+The integration is complete - the assignment functionality is now available in your doctype.
 ## 🔧 Customization
 
 You can easily customize by modifying:
