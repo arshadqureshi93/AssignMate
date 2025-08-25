@@ -29,9 +29,7 @@ frappe.ui.form.on("Your Doctype", {
     refresh(frm) {
         if (!frm.doc.name || frm.doc.__islocal) return;
           frappe.require(["assets/assignmate/js/assignmate.js"], () => {
-            if (window.setupUserAssignment) {
-              window.setupUserAssignment(frm, "Your Doctype", frm.doc.name);
-            }
+              setupUserAssignment(frm, "Your Doctype", frm.doc.name);
         });
     }
 });
